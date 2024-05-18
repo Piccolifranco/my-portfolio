@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import Particle from "./Particle";
 import TextEffect from "./TextEffect";
 import { HiArrowDownTray } from "react-icons/hi2";
 import { saveAs } from "file-saver";
@@ -11,8 +10,7 @@ export default function Hero() {
     saveAs(URL, "Franco Piccoli CV");
   };
   return (
-    <div className="lg:h[88vh] flex items-center h-[calc(100vh-92px)]">
-      <Particle />
+    <div className="lg:h-[88vh] flex items-center h-[calc(100vh-92px)]">
       <div className="w-4/5 lg:h-[88vh]  lg:grid flex flex-col-reverse lg:grid-cols-2 mx-auto gap-3 ">
         <div className="flex flex-col place-self-center gap-5 w-full">
           <h1 className="text-3xl md:text-5xl font-bold">

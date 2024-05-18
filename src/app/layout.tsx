@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import MobileNavBar from "@/components/MobileNavbar";
 import Hero from "@/components/Hero";
 import { Toaster } from "react-hot-toast";
+import Particle from "@/components/Particle";
 
 export const metadata: Metadata = {
   title: "My Portfolio",
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-primary">
         <Providers>
+          <Particle />
           <Toaster />
           <Navbar />
           {children}
