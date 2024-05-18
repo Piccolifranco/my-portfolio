@@ -23,15 +23,15 @@ const MobileNavbar = ({ nav, closeNav }: Props) => {
         <NavbarItem title="home" address="/" Icon={AiFillHome} />
         <NavbarItem
           title="projects"
-          address="/projects"
+          address="#projects"
           Icon={BsFillProjectorFill}
         />
         <NavbarItem
           title="about"
-          address="/about"
+          address="#about"
           Icon={BsFillInfoCircleFill}
         />
-        <NavbarItem title="contact" address="/contact" Icon={BiSolidContact} />
+        <NavbarItem title="contact" address="#contact" Icon={BiSolidContact} />
       </div>
       <div
         onClick={closeNav}
