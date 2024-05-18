@@ -17,9 +17,7 @@ export default function Hero() {
         <div className="flex flex-col place-self-center gap-5 w-full">
           <h1 className="text-3xl md:text-5xl font-bold">
             HI, I&apos;M{" "}
-            <span className="text-indigo-700 dark:text-indigo-500">
-              FRANCO!
-            </span>
+            <span className="text-indigo-700 dark:text-indigo-500">FRANCO</span>
           </h1>
           <TextEffect />
           <div className="flex mt-28">
