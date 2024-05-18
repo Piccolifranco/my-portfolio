@@ -1,4 +1,6 @@
-import toast from "react-hot-toast";
+import React from "react";
+
+const APIENDPOINT = "/api/email";
 
 export type ContactFormData = {
   name: string;
@@ -7,25 +9,24 @@ export type ContactFormData = {
   body: string;
 };
 
-export function sendEmail(
+export async function sendEmail(
   data: ContactFormData,
-  onStart: () => void,
-  onSettled: () => void
-): void {
-  const apiEndpoint = "/api/email";
-  onStart();
-  fetch(apiEndpoint, {
-    method: "POST",
-    body: JSON.stringify(data),
-  })
-    .then((res) => res.json())
-    .then((response) => {
-      toast.success(response.message);
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>
+) {
+  setLoading(true);
+  try {
+    const res = await fetch(APIENDPOINT, {
+      method: "POST",
+      body: JSON.stringify(data),
     })
-    .catch((err) => {
-      toast.error(err);
-    })
-    .finally(() => {
-      onSettled();
-    });
+    if (res.ok) {
+      return true
+    } else {
+      return false
+    }
+  } catch (error: unknown) {
+    return false
+  } finally {
+    setLoading(false)
+  }
 }

@@ -8,3 +8,9 @@ html,
 body {
   scroll-behavior: smooth;
 }
+
+
+#contact,
+#projects {
+  scroll-margin-top: 120px;
+}
