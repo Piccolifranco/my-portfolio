@@ -17,7 +17,7 @@ const MobileNavbar = ({ nav, closeNav }: Props) => {
   const isMobile = useMediaQuery("(max-width: 639px)");
   return (
     <div
-      className={`fixed ${navAnimation} bg-black transform transition-all duration-300 py-20 top-0 left-0 bottom-0 right-0 z-[10000]`}
+      className={`fixed ${navAnimation} dark:bg-[#080F18] bg-indigo-200 transform transition-all duration-300 py-20 top-0 left-0 bottom-0 right-0 z-[10000]`}
     >
       <div className="h-[100vh] flex flex-col gap-10">
         <NavbarItem title="home" address="/" Icon={AiFillHome} />
@@ -35,9 +35,9 @@ const MobileNavbar = ({ nav, closeNav }: Props) => {
       </div>
       <div
         onClick={closeNav}
-        className="absolute cursor-pointer text-white top-8 right-8 "
+        className="absolute cursor-pointer text-white top-8 right-5 "
       >
-        <FaXmark className="w-8 h-8" />
+        <FaXmark className="w-8 h-8 dark:text-gray-200 text-gray-800" />
       </div>
     </div>
   );

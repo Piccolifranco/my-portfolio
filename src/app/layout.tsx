@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-primary relative">
+      <body className="font-primary relative dark:bg-gray-900 bg-indigo-100">
         <Providers>
           <Particle />
           <Toaster />

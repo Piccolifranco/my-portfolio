@@ -30,7 +30,7 @@ export default function Navbar() {
             <span className="text-xl font-semibold">PORTFOLIO</span>
           </Link>
         </div>
-        <div className="flex lg:gap-10 items-center">
+        <div className="flex lg:gap-10 gap-6 items-center">
           <div className="hidden lg:flex gap-10">
             <NavbarItem title="home" address="/" Icon={AiFillHome} />
             <NavbarItem
@@ -51,7 +51,7 @@ export default function Navbar() {
           </div>
           <DarkModeSwitch />
           <HiBars3
-            className="text-3xl mx-6 sm:hidden cursor-pointer lg:hidden flex"
+            className="text-3xl  sm:hidden cursor-pointer lg:hidden flex"
             onClick={toggleMobileMenu}
           />
         </div>
