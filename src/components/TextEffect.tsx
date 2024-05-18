@@ -15,7 +15,7 @@ const TextEffect = () => {
       ]}
       wrapper="span"
       speed={50}
-      className="text-4xl font-semibold text-amber-700 dark:text-amber-500"
+      className="lg:text-4xl text-2xl font-semibold text-amber-700 dark:text-amber-500"
       repeat={Infinity}
     />
   );

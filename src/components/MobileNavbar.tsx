@@ -19,7 +19,7 @@ const MobileNavbar = ({ nav, closeNav }: Props) => {
     <div
       className={`fixed ${navAnimation} bg-black transform transition-all duration-300 py-20 top-0 left-0 bottom-0 right-0 z-[10000]`}
     >
-      <div className="w-[100vh] h-[100vh] flex flex-col gap-10">
+      <div className="h-[100vh] flex flex-col gap-10">
         <NavbarItem title="home" address="/" Icon={AiFillHome} />
         <NavbarItem
           title="projects"

@@ -19,7 +19,7 @@ export default function About() {
             <span className="text-indigo-700 dark:text-indigo-500">SKILLS</span>
           </span>
 
-          <div className="flex mt-28">
+          <div className=" mt-28 hidden lg:flex">
             <button className="bg-amber-700 dark:bg-amber-600 flex flex-col md:flex-row px-5 py-3 gap-3 items-center text-2xl font-bold">
               <p>DOWNLOAD CV</p>
             </button>
