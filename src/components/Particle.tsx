@@ -24,7 +24,7 @@ const Particle = () => {
   );
 
   return (
-    <div className="z-[-10]">
+    <div className=" absolute">
       <Particles
         id="tsparticles"
         init={particlesInit}

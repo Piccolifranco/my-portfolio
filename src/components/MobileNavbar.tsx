@@ -15,7 +15,7 @@ interface Props {
 const MobileNavbar = ({ nav, closeNav }: Props) => {
   const navAnimation = nav ? "translate-x-0" : "translate-x-[-100%]";
   const isMobile = useMediaQuery("(max-width: 639px)");
-  return isMobile ? (
+  return (
     <div
       className={`fixed ${navAnimation} bg-black transform transition-all duration-300 py-20 top-0 left-0 bottom-0 right-0 z-[10000]`}
     >
@@ -40,7 +40,7 @@ const MobileNavbar = ({ nav, closeNav }: Props) => {
         <FaXmark className="w-8 h-8" />
       </div>
     </div>
-  ) : null;
+  );
 };
 
 export default MobileNavbar;

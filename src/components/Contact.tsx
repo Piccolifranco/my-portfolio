@@ -23,7 +23,10 @@ const Contact = () => {
   }
 
   return (
-    <form className="w-3/5 mx-auto pb-20" onSubmit={handleSubmit(onSubmit)}>
+    <form
+      className="w-4/5 lg:w-3/5 mx-auto pb-20"
+      onSubmit={handleSubmit(onSubmit)}
+    >
       <div className="mb-5">
         <label htmlFor="name" className="mb-3 block text-base font-medium ">
           Full Name
@@ -71,7 +74,7 @@ const Contact = () => {
       <div>
         <button
           disabled={!isValid}
-          className="hover:shadow-form w-full dark:disabled:bg-gray-600 disabled:bg-gray-400 rounded-md dark:bg-amber-600 bg-amber-700 py-3 px-8 text-base font-semibold  outline-none"
+          className="hover:shadow-form w-full hover:dark:bg-amber-700 hover:bg-amber-600 transition-all duration-300 dark:disabled:bg-gray-600 disabled:bg-gray-400 rounded-md dark:bg-amber-600 bg-amber-700 py-3 px-8 text-base font-semibold  outline-none"
         >
           {loading ? (
             <ClipLoader

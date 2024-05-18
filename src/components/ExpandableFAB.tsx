@@ -74,9 +74,9 @@ const ExpandableFAB = () => {
       </div>
       <button
         onClick={toggleFAB}
-        className="flex items-center justify-center w-16 h-16 rounded-full bg-amber-700 dark:bg-amber-600 text-white shadow-lg "
+        className="flex items-center hover:dark:bg-amber-700 hover:bg-amber-600 transition-all duration-300 justify-center lg:w-16 lg:h-16 w-12 h-12 rounded-full bg-amber-700 dark:bg-amber-600 text-white shadow-2xl "
       >
-        <BiAt size={34} />
+        <BiAt className="lg:w-8 lg:h-8 w-6 h-6" />
       </button>
     </div>
   );
