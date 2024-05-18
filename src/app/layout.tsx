@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Providers from "./Providers";
 import Navbar from "@/components/Navbar";
-import MobileNavBar from "@/components/MobileNavbar";
-import Hero from "@/components/Hero";
 import { Toaster } from "react-hot-toast";
 import Particle from "@/components/Particle";
 
