@@ -37,7 +37,7 @@ const ExpandableFAB = () => {
   }, [isExpanded]);
 
   return (
-    <div ref={fabRef} id="FloatButton" className="fixed bottom  right-8">
+    <div ref={fabRef} id="FloatButton" className="fixed bottom-8  right-8">
       <div
         className={`flex flex-col pb-5 space-y-2 transition-all duration-500 items-center ${
           isExpanded ? "opacity-100" : "opacity-0 pointer-events-none"
