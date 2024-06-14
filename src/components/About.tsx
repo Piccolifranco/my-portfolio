@@ -12,7 +12,7 @@ export default function About() {
         id="about"
         className="w-4/5 flex flex-col-reverse lg:flex-row mx-auto mt-10 gap-3 "
       >
-        <div className="flex grow basis-0 place-self-center p-12 rounded-3xl bg-amber-700 dark:bg-amber-600">
+        <div className="flex grow basis-0 justify-center p-12 rounded-3xl bg-amber-700 dark:bg-amber-600">
           <Image
             priority
             src="/images/about-banner.svg"
@@ -21,7 +21,7 @@ export default function About() {
             alt="About me"
           />
         </div>
-        <div className="flex flex-col grow basis-0 lg:items-end place-self-center gap-5 w-full">
+        <div className="flex flex-col grow basis-0 lg:items-center place-self-center gap-5 w-full">
           <h2 className="text-xl md:text-2xl font-bold flex flex-col gap-3 text-amber-700 dark:text-amber-500">
             ABOUT ME
           </h2>
